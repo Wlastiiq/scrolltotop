@@ -1,4 +1,4 @@
-chrome.browserAction.onClicked.addListener(function(tab) {
+chrome.action.onClicked.addListener(function(tab) {
 	fetchSettings(function(data) {
 		scrollToDirection(data.toolbarClickAction, tab);
 	});
