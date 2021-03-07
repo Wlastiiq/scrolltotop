@@ -12,8 +12,7 @@
 
 	"author": "Pratik Soni",
 	"background": {
-		"scripts": [ "background.js", "toolbar-cx-menu.js" ],
-		"persistent": false
+		"service_worker": "background.js"
 	},
 
 	"content_scripts":[
@@ -34,7 +33,9 @@
 		"open_in_tab": true
 	},
 	"web_accessible_resources":[{
-		"resources": ["icons/*.png"]
+		"resources": ["icons/*.png"],
+		"matches": [],
+		"extension_ids": []
 	}],
 	"action": {}
 }
